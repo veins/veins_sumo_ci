@@ -10,6 +10,7 @@ This repository hosts the [GitHub Actions Workflow](https://github.com/veins/vei
 by building [Veins](https://github.com/sommer/veins), [OMNeT++](https://github.com/omnetpp/omnetpp) and [SUMO](https://github.com/eclipse/sumo) 
 from their respective repositories or installing their latest releases / nightly builds.
 
+The workflow is executed on every push to this repository (not by a push to veins, omnetpp or sumo!) and every night.
 The objective is to have the badge above green all the time.
 
 The log from the runs can be found in the [GitHub Action](https://github.com/veins/veins_sumo_ci/actions) artifacts.
