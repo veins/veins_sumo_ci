@@ -61,6 +61,7 @@ jobs:
 
     - name: Building OMNeT
       run: |
+        export PATH="/usr/lib/ccache:/usr/local/opt/ccache/libexec:$PATH"
         cd src/omnetpp
         cp configure.user.dist configure.user
         ./configure WITH_TKENV=no WITH_QTENV=no WITH_OSG=no WITH_OSGEARTH=no
@@ -68,6 +69,7 @@ jobs:
 
     - name: Building Veins
       run: |
+        export PATH="/usr/lib/ccache:/usr/local/opt/ccache/libexec:$PATH"
         cd src/veins
         ./configure
         make -j4
